@@ -1,0 +1,13 @@
+<div class="chicken-coop">
+    <h2>Chicken Coop</h2>
+    <p>Money: {{ money }}</p>
+    <button (click)="earnMoney()">Earn Money</button>
+    <!-- Utilise [disabled] pour griser le bouton si l'argent est insuffisant -->
+    <button (click)="buyUpgrade()" [disabled]="money < calculateUpgradeCost()">Buy Upgrade (Cost: {{ calculateUpgradeCost() }})</button>
+    <div class="progress-container">
+        <div class="progress-bar" [style.width]="getProgress() + '%'"></div>
+    </div>
+      <!-- Affichage du niveau actuel du poulailler -->
+    <p>Niveau du Poulailler : {{ upgradeLevel }}</p>
+</div>
+  
