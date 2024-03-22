@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "farm-empire-idle": {
+      "hosting": {
+        "farmempireidle": [
+          "farm-empire-idle"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "farm-empire-idle"
+  }
+}
