@@ -4,7 +4,7 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
-  styleUrl: './signin.component.scss'
+  styleUrls: ['./signin.component.scss', '../../assets/template.scss']
 })
 export class SigninComponent {
 currentUrl: any;
