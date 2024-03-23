@@ -1,0 +1,18 @@
+
+
+<main class="main">
+  <header>
+    <!-- game.component.html -->
+<div *ngIf="userEmail$ | async as userEmail; else notLoggedIn">
+  Bienvenue, {{ userEmail }}
+  <button (click)="logout()">Déconnexion</button>
+</div>
+<ng-template #notLoggedIn>
+  <p>Veuillez vous connecter.</p>
+</ng-template>
+  </header>
+    <div class="content">
+      <app-chicken-coop></app-chicken-coop>
+    </div>
+</main>
+  

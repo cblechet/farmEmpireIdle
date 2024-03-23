@@ -1,0 +1,12 @@
+
+<main class="main">
+    <div class="content">
+      <h2>Connexion</h2>
+      <form (submit)="signIn(email.value, password.value)">
+        <input type="email" #email placeholder="Email">
+        <input type="password" #password placeholder="Mot de passe">
+        <button type="submit">Se connecter</button>
+      </form>
+      <a routerLink="/signup">Inscription</a>
+    </div>
+  </main>
