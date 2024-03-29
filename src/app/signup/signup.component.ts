@@ -4,7 +4,8 @@ import { AuthService } from '../auth.service'; // Assure-toi que le chemin est c
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
-  styleUrl: './signup.component.scss'
+  styleUrls: ['./signup.component.scss', '../../assets/template.scss']
+
 })
 export class SignupComponent {
   email: string = '';

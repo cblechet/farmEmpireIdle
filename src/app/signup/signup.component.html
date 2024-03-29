@@ -1,12 +1,13 @@
-
 <main class="main">
-  <div class="content">
-    <h2>Inscription</h2>
-  <form (submit)="signUp(email.value, password.value)">
-    <input type="email" #email placeholder="Email">
-    <input type="password" #password placeholder="Password">
-    <button type="submit">S'inscrire</button>
-    <a routerLink="/home">Retour</a>
-  </form>
+  <div class="container">
+    <div class="content">
+      <h2>Inscription</h2>
+      <form (submit)="signUp(email.value, password.value)">
+        <input type="email" #email placeholder="Email">
+        <input type="password" #password placeholder="Password">
+        <button type="submit">S'inscrire</button>
+        <a routerLink="/home">Retour</a>
+      </form>
+    </div>
   </div>
-</main>
+  </main>
